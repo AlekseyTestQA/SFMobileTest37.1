@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class iOSSearchPageObject extends MainPageObject implements ISearchPageObject {
     final static String SEARCH_INPUT = "xpath://XCUIElementTypeSearchField[@value='Search Wikipedia']";
-    final static String RESULT_ELEMENT_BY_TEXT_TPL = "xpath://*[./*[contains(@name,'{TEXT}')]]";
+    final static String RESULT_ELEMENT_BY_TEXT_TPL = "xpath://XCUIElementTypeStaticText[@name= '{TEXT}']";
 
     public iOSSearchPageObject(RemoteWebDriver driver) {
         super(driver);

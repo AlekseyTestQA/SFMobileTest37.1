@@ -14,7 +14,7 @@ import org.openqa.selenium.WebElement;
 import java.nio.file.WatchEvent;
 
 public class SearchTest extends CoreTestCase {
-    //Выполнение пункта 2
+    //Выполнение пункта 3
     @Test
     public void testSearch() {
         IOnboardingPageObject onboardingPage = OnboardingPageFactory.get(this.driver);
@@ -23,7 +23,7 @@ public class SearchTest extends CoreTestCase {
 
         onboardingPage.skipOnboarding();
         startPage.initSearch();
-        searchPage.findByText("Java");
-        searchPage.selectByText("Island of Indonesia");
+        searchPage.findByText("wfewfewfwegweg");
+        searchPage.selectByText("No results found");
     }
 }
